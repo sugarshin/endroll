@@ -1,0 +1,41 @@
+@charset "utf-8"
+
+body
+  background #000
+  color #fbdf00
+
+.endroll
+  position absolute
+  width 18em
+  height 50em
+  bottom 0
+  left 50%
+  margin-left -9em
+  font-size 350%
+  font-weight bold
+  text-align justify
+  overflow hidden
+  -webkit-transform-origin 50% 100%
+  transform-origin 50% 100%
+  -webkit-transform perspective(300px) rotateX(25deg)
+  transform perspective(300px) rotateX(25deg)
+  &::after
+    position absolute
+    content ""
+    left 0
+    right 0
+    top 0
+    bottom 60%
+    pointer-events none
+
+.inner
+  position absolute
+  top 100%
+  -webkit-animation endroll 100s linear 4s infinite
+  animation endroll 100s linear 4s infinite
+
+@keyframes endroll
+  0%
+    top 100%
+  100%
+    top -170%
