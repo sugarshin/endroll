@@ -1,5 +1,5 @@
 @charset "utf-8";/*!
- * @license endroll v1.0.0
+ * @license endroll v1.1.0
  * (c) 2014 sugarshin https://github.com/sugarshin
  * License: MIT
- */body{background:#000;color:#fbdf00}.endroll{position:absolute;width:18em;height:50em;bottom:0;left:50%;margin-left:-9em;font-size:350%;font-weight:700;text-align:justify;overflow:hidden;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transform:perspective(300px) rotateX(25deg);transform:perspective(300px) rotateX(25deg)}.endroll::after{position:absolute;content:"";left:0;right:0;top:0;bottom:60%;pointer-events:none}.inner{position:absolute;top:100%;-webkit-animation:endroll 100s linear 4s infinite;animation:endroll 100s linear 4s infinite}@-moz-keyframes endroll{0%{top:100%}100%{top:-170%}}@-webkit-keyframes endroll{0%{top:100%}100%{top:-170%}}@-o-keyframes endroll{0%{top:100%}100%{top:-170%}}@keyframes endroll{0%{top:100%}100%{top:-170%}}
+ */body{background:#000;color:#fbdf00}.endroll{position:absolute;width:16em;height:50em;bottom:0;left:50%;margin-left:-8em;font-size:350%;font-weight:700;text-align:justify;overflow:hidden}.endroll::after{position:absolute;content:"";left:0;right:0;top:0;bottom:60%;pointer-events:none}.inner{position:absolute;top:100%;-webkit-animation:endroll 100s linear 4s infinite;animation:endroll 100s linear 4s infinite}@-moz-keyframes endroll{0%{top:100%}100%{top:-170%}}@-webkit-keyframes endroll{0%{top:100%}100%{top:-170%}}@-o-keyframes endroll{0%{top:100%}100%{top:-170%}}@keyframes endroll{0%{top:100%}100%{top:-170%}}

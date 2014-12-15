@@ -1,5 +1,5 @@
 /*!
- * @license endroll v1.0.0
+ * @license endroll v1.1.0
  * (c) 2014 sugarshin https://github.com/sugarshin
  * License: MIT
  */
@@ -10,19 +10,15 @@ body {
 }
 .endroll {
   position: absolute;
-  width: 18em;
+  width: 16em;
   height: 50em;
   bottom: 0;
   left: 50%;
-  margin-left: -9em;
+  margin-left: -8em;
   font-size: 350%;
   font-weight: bold;
   text-align: justify;
   overflow: hidden;
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: perspective(300px) rotateX(25deg);
-  transform: perspective(300px) rotateX(25deg);
 }
 .endroll::after {
   position: absolute;
