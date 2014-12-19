@@ -1,20 +1,49 @@
 @charset "utf-8"
 
+html 
+  height 100%
+  
 body
+  height 100%
+  line-height 1.5
   background #000
   color #fbdf00
+  font-family "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
+
+h1 {
+  margin-bottom 800px
+  text-align center
+}
+
+h2
+  text-align center
+
+ul
+  display table
+  padding-bottom 500px
+  li
+    min-width 50%
+    float left
+    list-style-type none
+    margin 0 0 0.5em
+    padding 0
+  &.sponsor
+    li
+      width 100%
+      float none
+      margin 300px 0
 
 .endroll
   position absolute
-  width 16em
-  height 50em
+  width 20em
+  height 100%
+  overflow hidden
   bottom 0
   left 50%
-  margin-left -8em
-  font-size 350%
+  margin-left -10em
+  font-size 300%
   font-weight bold
   text-align justify
-  overflow hidden
   // -webkit-transform-origin 50% 100%
   // transform-origin 50% 100%
   // -webkit-transform perspective(300px) rotateX(25deg)
@@ -31,11 +60,11 @@ body
 .inner
   position absolute
   top 100%
-  -webkit-animation endroll 100s linear 4s infinite
-  animation endroll 100s linear 4s infinite
+  -webkit-animation endroll 120s linear 4s
+  animation endroll 120s linear 4s
 
 @keyframes endroll
   0%
     top 100%
   100%
-    top -170%
+    top -16000px

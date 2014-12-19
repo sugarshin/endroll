@@ -31,15 +31,18 @@ gulp.task 'stylus', ->
       compress: false
     .pipe header(banner)
     .pipe gulp.dest('dest/')
+    .pipe gulp.dest('public/')
 
 gulp.task 'serve', ->
   browserSync
     server:
       baseDir: './'
       index: 'public/index.html'
+      routes:
+        '/': 'public'
 
 gulp.task 'default', ['serve'], ->
-  gulp.watch ["src/#{fileName}.styl"], ['stylus', browserSync.reload]
+  gulp.watch "src/#{fileName}.styl", ['stylus', browserSync.reload]
 
 gulp.task 'major', ->
   gulp.src './*.json'
@@ -62,7 +65,7 @@ gulp.task 'patch', ->
     )
     .pipe gulp.dest('./')
 
-gulp.task 'build', ['stylus'], ->
+gulp.task 'min', ['stylus'], ->
   gulp.src "dest/#{fileName}.css"
     .pipe minifyCSS()
     .pipe rename
